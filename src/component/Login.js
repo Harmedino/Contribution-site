@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import 'animate.css/animate.min.css';
 
 const Login = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -9,9 +10,10 @@ const Login = () => {
       setPasswordVisible(!passwordVisible);
     };
 
+
   return (
     <div className="min-h-screen bg-lime-500 flex items-center justify-center">
-    <div className="bg-white p-8 rounded-lg shadow-lg w-11/12 max-w-md">
+    <div className={`bg-white p-8 rounded-lg shadow-lg w-11/12 max-w-sm fade-in`}>
       <h1 className="text-2xl font-bold mb-4 text-center text-lime-500">Login</h1>
       <form>
         <div className="mb-4">
